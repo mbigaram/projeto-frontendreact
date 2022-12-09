@@ -3,6 +3,7 @@ import HomePage from "../pages/Homepage"
 import ProductPage from "../pages/ProductPage"
 import SignupPage from "../pages/SignupPage"
 import LoginPage from "../pages/LoginPage"
+import PageNotFound from "../pages/PageNotFound"
 import data from '../data'
 
 
@@ -17,6 +18,7 @@ function Router() {
                 <Route path="/products" element={<ProductPage />} />
                 <Route path="/signup" element={<SignupPage />} />
                 <Route path="/login" element={<LoginPage />} />
+                <Route path="*" element={<PageNotFound/>} />
             </Routes>
         </BrowserRouter>
     )
