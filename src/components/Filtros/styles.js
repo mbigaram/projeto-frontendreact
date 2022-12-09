@@ -8,10 +8,10 @@ export const FiltroContainer = styled.main`
     border: 2px solid rgb(139, 164, 176);
     background: rgb(28, 56, 70, 0.6);
     width: 205px;
-    margin-top: 50px;
+    margin-top: 58px;
     margin-left: 1.5%;
     border-radius: 15px;
-    height:180px;
+    height:150px;
 
     .pesquisa {
         background: #1C3846;
@@ -34,7 +34,7 @@ export const FiltroContainer = styled.main`
         color:rgb(139, 164, 176);
         font-family: 'Saira Condensed', sans-serif;
         font-size: 15px;
-        padding: 15px 15px 5px  15px;
+        padding: 10px 15px 0  15px;
         justify-content: space-between    
     }
     
@@ -43,7 +43,7 @@ export const FiltroContainer = styled.main`
         color:rgb(139, 164, 176);
         font-family: 'Saira Condensed', sans-serif;
         font-size: 15px;
-        padding: 10px 15px 5px  15px;
+        padding: 10px 15px 0 15px;
         justify-content: space-between
     }
     .caixaordem{  

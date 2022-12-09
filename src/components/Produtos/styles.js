@@ -74,6 +74,10 @@ gap: 6px;
         box-shadow: 1px 1px 5px grey;
         margin-left: 5em;
         cursor: pointer;
+        transition: 1s;
+        :hover{
+            transform: translateY(-5px);
+        }
     }
     
    

@@ -1,11 +1,8 @@
 import React from "react"
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
-import data from './data'
-import { DivContainer, MainApp } from './styles'
+import Router from "./router/Router"
+import { ChakraProvider } from '@chakra-ui/react'
 import { createGlobalStyle } from "styled-components"
-import background from './assets/img/galaxy.png'
+
 
 export const GlobalStyled = createGlobalStyle`
 *{
@@ -16,23 +13,17 @@ export const GlobalStyled = createGlobalStyle`
 `
 
 function App() {
-  const { products } = data;
+
 
   return (
-    <MainApp>
-      <div className="back" style={{ backgroundImage: `url(${background})` }}>
-  
-    </div>
-    <GlobalStyled />
-    <Header/>
-      <DivContainer>
-        <Main 
-        products={products} 
-        ></Main>   
-      </DivContainer>
-      <Footer/>
-    </MainApp>
+    <>
+    <ChakraProvider>
+     <GlobalStyled />
+    <Router/>
+    </ChakraProvider>
+    </>
   );
 }
+
 
 export default App;
