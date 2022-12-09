@@ -13,6 +13,7 @@ width: 323px;
     margin-top: 3px;
     gap: 6px;
     font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
     color: rgb(139, 164, 176);
         
 }
@@ -40,9 +41,6 @@ width: 323px;
     padding: 0 10px;
     }
 
-
-
-
 .nome{
     display: flex;
     font-family: 'Stick No Bills', sans-serif; 
@@ -52,7 +50,7 @@ width: 323px;
 
 .vazio{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 
@@ -96,6 +94,9 @@ width: 323px;
 }
 
 .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -115,9 +116,6 @@ width: 323px;
 }
 
 
-
-
-
 .carcesta {
     display: flex;
     justify-content: center;
@@ -126,29 +124,39 @@ width: 323px;
 
 .cesta {
     font-family: 'Saira Condensed', sans-serif; 
+    font-size: 14px;
     background: rgb(28, 56, 70);
     border-radius: 50%;
     width: 25px;
     border: 2px solid rgb(139, 164, 176);
     color: rgb(139, 164, 176);
     position: absolute;
-    right: 75px;
+    right: 73px;
+    top: -6px; 
 
 }
 
 .imagemCarrinho{
-    width: 33px;
-    
+    width: 36px;  
 }
 
 
 .valortotal{
     display: flex;
-    gap: 80px;
+    gap: 37px;
     text-decoration: overline;
     font-family: 'Stick No Bills', sans-serif;
     padding: 0px 10px;
-
-
 }
+`
+export const Finalizar = styled.button`
+    cursor: pointer;
+    background: rgb(139, 164, 176);
+    color:rgb(28, 56, 70);
+    font-family: 'Saira Condensed', sans-serif;  
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px grey; 
+    padding: 0 21px;
+ 
 `

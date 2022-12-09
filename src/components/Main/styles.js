@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.main`
 display: flex;
-margin-top: 85px;
+margin-top: 8px;
 flex-direction: column;
 width: 81%;
-// background: rgb(28, 56, 70);
+
 
 .produtos{
     display: flex;
